@@ -38,7 +38,7 @@ export const ScrollMagicPinnedMixin = Mixin.create(
 
     pinOptions = JSON.parse(JSON.stringify(pinOptions));
 
-    return new ScrollMagic.Scene(opts).setPin(`#${pinElementId}`, pinOptions).setClassToggle(pinElementId, "scrollmagic-pin-pinned");;
+    return new ScrollMagic.Scene(opts).setPin(`#${pinElementId}`, pinOptions).setClassToggle(`#${pinElementId}`, "scrollmagic-pin-pinned");;
   }
 });
 
